@@ -2,7 +2,8 @@
 
 <div align="center">
 <h3>25th YBIGTA Conference</h3>
-![KakaoTalk_20241224_010135825](https://github.com/user-attachments/assets/30ab9b7f-8bc3-4129-8665-18011013b9e4)
+
+![KakaoTalk_20241224_010135825](https://github.com/user-attachments/assets/b6e591fb-a510-4cb5-a785-587430edafbc)
 
 <em>Your Friendly Fitness Coach: Real-time Exercise Analysis and Feedback System</em>
 
