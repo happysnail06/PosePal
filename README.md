@@ -5,7 +5,7 @@
 
 ![KakaoTalk_20241224_010135825](https://github.com/user-attachments/assets/b6e591fb-a510-4cb5-a785-587430edafbc)
 
-<em>Your Friendly Fitness Coach</em>
+<em>Your Friendly Fitness Coach: Real-time Exercise Analysis and Feedback System</em>
 
 </div>
 
