@@ -2,6 +2,7 @@
 
 <div align="center">
 <h3>25th YBIGTA Conference</h3>
+![KakaoTalk_20241224_010135825](https://github.com/user-attachments/assets/30ab9b7f-8bc3-4129-8665-18011013b9e4)
 
 <em>Your Friendly Fitness Coach: Real-time Exercise Analysis and Feedback System</em>
 
@@ -97,7 +98,3 @@
 | 이상헌      | DE  | Fullstack                        |
 | 최수현      | DS  | Multivariate Time-Series Modeling, Pose Estimation Modeling |
 | 홍규원      | DA  | LLM, Reports Generation, Chatbot System |
-
----
-
-Let me know if you'd like any further refinements!
