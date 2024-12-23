@@ -82,8 +82,6 @@ PosePal을 소개합니다!
   - Variable Interdependencies and Temporal Dependency
   - Higher Complexity: Univariate time-series에 비해 분석과 모델링이 어려움.
 ![image](https://github.com/user-attachments/assets/35a415f9-9c26-4687-987a-1f1b35855650)
-![image](https://github.com/user-attachments/assets/56f1537b-0215-414e-9625-f5204f779c73)
-
 
 - **MediaPipe**
   - Google의 Pose Estimation 프레임워크로, BlazePose를 기반으로 하여 높은 정확도 제공.
