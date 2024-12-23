@@ -37,6 +37,7 @@ PosePal을 소개합니다!
 1. 사용자의 운동 자세를 실시간으로 추적하여 주요 관절의 움직임을 분석. 
 2. 촬영된 영상을 분석하여 올바르게 운동을 수행하고 있는지 여부를 분류하고 분석한 후, 점수화하여 하나의 리포트 형태로 정리. 
 3. 추가적으로 궁금한 점을 실시간으로 챗봇을 통해 질문할 수 있도록 하여, 심화 운동 학습에 도움을 주고자 함.
+![frame_25](https://github.com/user-attachments/assets/19d02d3a-c206-491d-871e-9def6026f384)
 
 ---
 
@@ -58,6 +59,7 @@ PosePal을 소개합니다!
    - Outputs: 운동 영상 기반 자세 분석 후 제공되는 피드백
    - Personlized Report: 운동 분석 결과를 시각적이고 문서화된 형태로 사용자에게 제공
    - Chatbot: 추가로 궁금한 점을 실시간으로 질문하여 심화 운동 지식 학습.
+![image](https://github.com/user-attachments/assets/f88c4788-4d25-407a-a1e1-5a671f0b67be)
 
 ### 데이터셋
 
@@ -80,6 +82,9 @@ PosePal을 소개합니다!
   - Multiple Variables: 각각의 변수가 시간에 따라 변화하는 feature를 나타냄.
   - Variable Interdependencies and Temporal Dependency
   - Higher Complexity: Univariate time-series에 비해 분석과 모델링이 어려움.
+![image](https://github.com/user-attachments/assets/35a415f9-9c26-4687-987a-1f1b35855650)
+![image](https://github.com/user-attachments/assets/56f1537b-0215-414e-9625-f5204f779c73)
+
 
 - **MediaPipe**
   - Google의 Pose Estimation 프레임워크로, BlazePose를 기반으로 하여 높은 정확도 제공.
@@ -87,11 +92,13 @@ PosePal을 소개합니다!
   - OpenPose Framework와 비교하여 상대적으로 가벼워 모바일 환경으로의 확장 가능성
   - For Training: AI HUB Raw Image Data -> Pose Estimation -> Training Data Construction
   - For User: Video Data -> Dividing Video into Frames -> Pose Estimation -> Input data for Inference
+![image](https://github.com/user-attachments/assets/1856fb5d-0732-4268-afc0-39a64c51f5f1)
 
 - **ROCKET Classifier**
   - An efficient method for time-series classification.
   - Transforms raw time-series data into a feature space using thousands of random convolutional kernels, and feed it into RidgeClassifier.
   - 즉, Random 1-D Kernels와 RidgeClassifier를 조합하여 Multivariate Time-Series 데이터를 효과적으로 분류.
+![image](https://github.com/user-attachments/assets/74283725-0f61-4b0f-925f-9477cdac5ac6)
 
 - **GPT API**
   - 사용자의 운동 데이터를 바탕으로 언어 기반의 개인화된 피드백 생성.
@@ -114,6 +121,7 @@ PosePal을 소개합니다!
      - e.g. 사레레는 left elbow의 y좌표를 기준으로 삼음.
      - 2 reps마다 데이터를 결합하여 chunking.
   - Point: Time Series Data를 Chunking 후 Rocket Classifier의 Input Data로 넣어 모델 학습 및 추론 진행.
+![image](https://github.com/user-attachments/assets/03dd1042-987c-4546-9a4a-02c06a48bdf5)
 
 ---
 
@@ -124,9 +132,13 @@ PosePal을 소개합니다!
    - 분류된 결과 + 올바른 자세와 부정확한 자세의 관절값을 비교한 Pose Estimation 결과를 바탕으로 한 세트의 운동 전반에 대한 Report를 LLM (GPT 3.5)이 생성
    - Prompt Engineering : Persona 부여 -> GPT에 전문 피트니스 코치라는 역할 부여.
    - Report에는 운동의 각 항목별(예: 무릎 각도, 상체 안정성 등)에 대해 세부 점수를 합산한 총점, 총평 등이 포함됨.
+![image](https://github.com/user-attachments/assets/3702bb80-dac4-4061-99c9-2df318be05a7)
+
 2. **실시간 챗봇 기능**
    - 앞에서의 사용자 운동 리포트를 기반으로 GPT-4를 활용해 실시간으로 유저의 질문에 대해 친절한 답변을 제공(?)
    - 챗봇의 응답은 비동기적으로 처리되어, 사용자가 질문을 입력한 후 응답이 준비되는 대로 순차적으로 화면에 표시됨.
+![image](https://github.com/user-attachments/assets/fa70b65c-ae4e-4502-8ea0-cc2786e920d6)
+
 3. **Contributions**
    - Time-series를 이용한 Exercise Classification의 신선함(?)
 4. **Limitations**
